@@ -1,8 +1,9 @@
 import string
 from sqlalchemy import Integer, create_engine, Column, BigInteger, String, true
 from sqlalchemy.orm import Session, base, declarative_base, sessionmaker
-
-database_url = "postgresql://postgres:solohiddin@localhost:5432/bot2_audio"
+from config.config import settings
+    
+database_url = settings.DATABASE_URL
 # database_url = "postgresql://postgres:[YOUR-PASSWORD]@db.gwxdozrfildddbfvnsqt.supabase.co:5432/postgres"
 engine = create_engine(database_url)
 

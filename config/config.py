@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     OWNER: str
     YOU_TUBE_API: str
     YOU_TUBE_SEARCH: str
+    # database_url: str = DATABASE_URL
+    DATABASE_URL: str
+    # DBNAME: str
 
     # PORT: str
     # PASSWORD: str
